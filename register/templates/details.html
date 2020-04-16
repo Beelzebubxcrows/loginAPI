@@ -1,0 +1,28 @@
+{% extends 'base.html '%}
+{% block content %}
+
+
+<table>
+    <tr><td>NAME:</td><td>
+        {{userdetails.first_name}}
+    </td></tr>
+    <tr><td>NUMBER:</td><td>{{userdetails.last_name}}</td></tr>
+    <tr><td>EMAIL:</td><td>{{userdetails.email}}</td></tr>
+
+
+</table>
+
+<a href="http://127.0.0.1:8000/logout/"><button class="btn btn-danger">LOGOUT</button></a>
+
+<style>
+    td{
+        font-size: xx-large;
+
+    }
+    table{
+        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+{% endblock %}
