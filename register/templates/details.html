@@ -1,6 +1,6 @@
 {% extends 'base.html '%}
 {% block content %}
-{% if user.isauthenticated %}
+
 
 <table>
     <tr><td>NAME:</td><td>
@@ -13,7 +13,7 @@
 </table>
 
 <a href="http://127.0.0.1:8000/logout/"><button class="btn btn-danger">LOGOUT</button></a>
-{%endif%}
+
 <style>
     td{
         font-size: xx-large;
